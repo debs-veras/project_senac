@@ -1,0 +1,65 @@
+.title{
+  color: #004A8D;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.content{
+  width: 100%;
+  height: auto;
+}
+  
+.content, .menuoption{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-wrap: wrap;
+}
+  
+.content img{
+  width: 100px;
+  height: 80px;
+}
+  
+.itens a , .itens button{
+  color: #004A8D;
+  margin: 20px 20px;
+  font-weight: bold;
+}
+  
+.itens input{
+  width: 457px;
+  height: 38px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 1px solid #004A8D;
+  background-color: rgba(0, 74, 141, 0.2);
+}
+  
+.itens input::placeholder{
+  color: #004A8D;
+  padding: 10px;
+}
+
+.menu-itens{
+  display: flex;
+}
+
+.subtitle{
+  font-size: 14px;
+  margin: 20px;
+  color: rgba(70, 65, 65, 0.8);
+}
+
+.subtitle button{
+  padding: 0px 5px;
+}
+
+.colorblue{
+  color: #004A8D;
+}
+
+.coloorange{
+  color:  rgba(242, 139, 60, 1);
+}

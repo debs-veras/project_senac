@@ -1,0 +1,16 @@
+ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;  
+  align-content: center;
+  align-items: center;
+}
+ 
+ul li{
+  margin: 20px;
+}
+
+.icons{
+  font-size: 24px;
+  color: rgb(156, 154, 154);
+}

@@ -1,0 +1,33 @@
+<div class="content">
+  <mat-card class="example-card">
+    <div>
+      <img mat-card-image [src]="cardunidades.imgurl" alt="Photo of a Shiba Inu"> 
+    </div>
+    <div class="line"></div>
+    <mat-card-header>
+      <mat-card-title class="title">{{cardunidades.name}}</mat-card-title>
+      <mat-card-subtitle class="subtitle"> </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="details">
+      <div class="itens">
+        <fa-icon class="icon" [icon]="['fas', 'clock']"></fa-icon> 
+        <span class="text">{{cardunidades.time}}</span> 
+      </div>
+
+      <div class="itens">
+        <fa-icon class="icon" [icon]="['fas', 'phone']"></fa-icon>
+        <span class="text">{{cardunidades.phone}}</span> 
+      </div>
+      
+      <div class="itens">
+        <fa-icon class="icon" [icon]="['fas', 'envelope']"></fa-icon> 
+        <span class="text">{{cardunidades.email}}</span>
+      </div>
+      
+      <div class="itens">
+        <fa-icon class="icon" [icon]="['fas', 'location-arrow']"></fa-icon>  
+        <span class="text">{{cardunidades.location}}</span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

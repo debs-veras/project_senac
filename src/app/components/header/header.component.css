@@ -1,0 +1,35 @@
+.content{
+  width: 100%;
+  height: auto;
+  background-color:#004A8D;
+  font-size: 12px;
+  padding: 10px 0px ;
+}
+  
+.menuoption{
+  height: 20px;
+  width: 62%;
+  margin: 0px 48px;
+}
+  
+.content, .menuoption{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: #fff;
+  flex-wrap: wrap;
+}
+  
+.itens{
+  flex-direction: row;
+}
+  
+.itens a{
+  color: #fff;
+  margin: 0px 10px;
+  line-height:14.52px;
+}
+  
+fa-icon{
+  margin: 5px;
+}

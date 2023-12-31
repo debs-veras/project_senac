@@ -1,0 +1,26 @@
+ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;  
+  align-content: center;
+  align-items: center;
+}
+  
+ul li{
+  margin: 20px;
+}
+
+.icons{
+  font-size: 24px;
+  color: rgb(156, 154, 154);
+}
+
+.link a{
+  text-decoration: underline !important;
+  color: rgba(128, 128, 128, 1);
+}
+
+.link{
+  text-align: right;
+  margin: 0 13%;
+}

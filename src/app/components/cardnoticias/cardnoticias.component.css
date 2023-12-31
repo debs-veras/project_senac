@@ -1,0 +1,37 @@
+.example-card{
+  width: 340px;
+  height: 473px;
+  border-radius: 5px, 5px, 0px, 0px ;
+}
+    
+.example-card img{
+  height: 272.07px;
+}
+  
+.subtitle{
+  display: flex;
+  align-items: center;
+  width: 80px;    
+  height: 25px;
+  font-size: 12px;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(68, 126, 242, 0.1);
+  color: rgba(68, 126, 242);
+}
+  
+.title{
+  color: rgba(70, 65, 65);
+  font-weight: bold;
+  margin: 10px 0px;
+}
+  
+.icon{
+  color: rgba(70, 65, 65, 1);
+}
+  
+.content-details div{
+  display: inline;
+  margin-right: 10px;
+}

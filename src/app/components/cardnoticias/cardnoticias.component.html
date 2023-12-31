@@ -1,0 +1,26 @@
+<div class="content">
+  <mat-card class="example-card">
+    <img mat-card-image [src]="cardnoticias.imgurl" alt="Photo of a Shiba Inu" />       
+    <mat-card-header>
+      <mat-card-subtitle class="subtitle">
+        {{cardnoticias.type}}
+      </mat-card-subtitle>
+      <mat-card-title class="title">
+        {{cardnoticias.name}}
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="details">
+      <p>{{cardnoticias.detail}}</p>
+      <div class="content-details">
+        <div>
+          <fa-icon class="icon" [icon]="['fas', 'calendar']"></fa-icon>
+          {{cardnoticias.date}}
+        </div> 
+        <div>
+          <fa-icon class="icon" [icon]="['fas', 'clock']"></fa-icon> 
+          {{cardnoticias.time}}
+        </div> 
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

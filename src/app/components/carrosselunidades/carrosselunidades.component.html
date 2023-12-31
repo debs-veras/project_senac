@@ -1,0 +1,15 @@
+<div class="container-carousel">
+  <div class="card-container">
+    <ul>
+      <li class="icons">
+        <fa-icon (click) = "backSlider()" [icon]="['fas', 'chevron-left']"></fa-icon>
+      </li>
+      <li *ngFor="let lista of aux">
+        <app-cardunidades [cardunidades]="lista" class="card-active"></app-cardunidades>
+      </li>
+      <li class="icons">
+        <fa-icon (click) = "nextSlider()" [icon]="['fas', 'chevron-right']"></fa-icon>
+      </li>
+    </ul> 
+  </div>
+</div>

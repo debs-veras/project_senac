@@ -1,0 +1,56 @@
+.example-card{
+  width: 340px;
+  height: 511px;
+  border-radius: 20px;
+  background-size: cover;
+  padding: 20px;
+}
+  
+.example-card::after{
+  content: "";
+  color: #ffffff;
+  background-color:   rgba(0, 0, 0, 0.3);
+}
+  
+.title{
+  margin-top: auto;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 35px;
+}
+  
+.subtitle{
+  z-index: 1;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 35px;
+}
+  
+.action{
+  justify-content: center;
+}
+  
+button{
+  background-color: #ffffff;
+  z-index: 1;
+  width: 148px;
+  height: 48px;
+  border-radius: 5px;
+  color: #004A8D;
+  border: none;
+  font-weight: bold;
+  opacity: 0.8;
+}
+  
+.background-card1{
+  background-image: url("../../../assets/images/acesso-rapido/senac-gratuito.jpg");
+}
+  
+.background-card2{
+  background-image: url("../../../assets/images/acesso-rapido/senac-turmas.jpg");
+}
+  
+.background-card3{
+  background-image: url("../../../assets/images/acesso-rapido/senac-empregabilidade.png");
+}

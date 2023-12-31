@@ -1,0 +1,91 @@
+<div class="content">
+  <div class="menuoption" >
+    
+    <div class="itens">
+      <img src="../../../assets/logo.png" srcset="">
+    </div>
+
+    <div class="itens colorblue">
+      <button (click)="toggleIcone()" mat-button [matMenuTriggerFor]="menu">Cursos
+        <fa-icon *ngIf="!iconeClicado"[icon]="['fas', 'chevron-down']"></fa-icon>
+        <fa-icon *ngIf="iconeClicado" [icon]="['fas', 'chevron-up']"></fa-icon>
+      </button>
+
+      <mat-menu #menu="matMenu" (close)="toggleIcone()">
+        <div class="menu-itens">
+          <div class="subtitle">
+            <span class="title">Áreas</span>
+            <button mat-menu-item>Comunicação</button>
+            <button mat-menu-item>Gastronomia</button>
+            <button mat-menu-item>Gestão e negócios</button>
+            <button mat-menu-item>Idiomas</button>
+            <button mat-menu-item>Tecnologia da informação</button>
+            <button mat-menu-item>Saúde</button>
+          </div>
+          <div class="subtitle">
+            <span class="title">Tipos</span>
+            <button mat-menu-item>Livres</button>
+            <button mat-menu-item>Idiomas</button>
+            <button mat-menu-item>Técnico</button>
+            <button mat-menu-item>Senac EAD</button>
+          </div>  
+        </div>
+      </mat-menu>
+    </div>
+
+    <div  class="itens">
+      <button (click)="toggleIcone()" mat-button [matMenuTriggerFor]="unidades">Unidades
+        <fa-icon *ngIf="!iconeClicado"[icon]="['fas', 'chevron-down']"></fa-icon>
+        <fa-icon *ngIf="iconeClicado" [icon]="['fas', 'chevron-up']"></fa-icon>
+      </button>
+
+      <mat-menu #unidades="matMenu" (close)="toggleIcone()">
+        <div class="menu-itens">
+          <div class="subtitle">
+            <span class="title">Unidades</span>
+            <button mat-menu-item>Assú</button>
+            <button mat-menu-item>Caicó</button>
+            <button mat-menu-item>Mossoró</button>
+            <button mat-menu-item>Natal - Alecrim</button>
+            <button mat-menu-item>Natal - Barreiras Roxa</button>
+            <button mat-menu-item>Natal - Centro</button>
+            <button mat-menu-item>Natal - Zona Norte</button>
+            <button mat-menu-item>Natal - Zona Sul</button>
+          </div> 
+        </div>
+      </mat-menu>
+    </div>
+
+    <div  class="itens">
+      <button (click)="toggleIcone()" mat-button [matMenuTriggerFor]="senac">Senac
+        <fa-icon *ngIf="!iconeClicado"[icon]="['fas', 'chevron-down']"></fa-icon>
+        <fa-icon *ngIf="iconeClicado" [icon]="['fas', 'chevron-up']"></fa-icon>
+      </button>
+
+      <mat-menu #senac="matMenu" (close)="toggleIcone()">
+        <div class="menu-itens">
+          <div class="subtitle">
+            <button mat-menu-item>Senac Empregabilidade</button>
+            <button mat-menu-item>Senac Gratuidade</button>
+          </div> 
+        </div>
+      </mat-menu>
+    </div>
+
+    <div class="itens">
+      <a href="#">Para Empresas</a>
+    </div>
+
+    <div class="itens">
+      <a href="#">Blog</a>
+    </div>
+
+    <div class="itens">
+      <div class="submit-line">
+        <input type="search" name="onchange" id="change" placeholder="O que você procura?">
+      </div>
+    </div>
+
+  </div>
+</div>
+  

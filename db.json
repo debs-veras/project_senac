@@ -1,0 +1,42 @@
+{  
+  "cursos": [{
+    "id": 0,
+    "type": "Livre",
+    "name": "Corte Masculino",
+    "modality": "Presencial",
+    "duration": 40,
+    "typecurso": "Beleza e Estética",
+    "urlimg": "../../../assets/images/cursos/curso1.png",
+    "cor": "orange"
+  },
+  {
+    "id": 1,
+    "type": "Técnico",
+    "name": "Comida de Boteco",
+    "modality": "Presencial",
+    "duration": 40,
+    "typecurso": "Gastronomia e Alimentação",
+    "urlimg": "../../../assets/images/cursos/curso2.jpg",
+    "cor":"green-dark"
+  },
+  {
+    "id": 2,
+    "type": "Livre",
+    "name": "Maquiagem",
+    "modality": "Presencial",
+    "duration": 40,
+    "typecurso": "Beleza e Estética",
+    "urlimg": "../../../assets/images/cursos/curso3.jpeg",
+    "cor": "orange"
+  },
+  {
+    "id": 3,
+    "type": "EAD",
+    "name": "Estratégia em Vendas",
+    "modality": "Online",
+    "duration": 40,
+    "typecurso": "Comércio e Vendas",
+    "urlimg": "../../../assets/images/cursos/curso4.jpg",
+    "cor": "lilac"
+  }]
+}

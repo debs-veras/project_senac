@@ -1,0 +1,34 @@
+<div class="content">
+  <mat-card class="example-card">
+    <div>
+      <img mat-card-image [src]="cardCurso.urlimg" alt="Photo of a Shiba Inu">  
+    </div>
+    <div class="line back{{cardCurso.cor}}"></div>
+    <mat-card-header>
+      <mat-card-subtitle class="subtitle">{{ cardCurso.typecurso}}</mat-card-subtitle>
+      <mat-card-title class="title {{cardCurso.cor}}">{{ cardCurso.name }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="details">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, culpa magnam voluptatum aut iusto dicta mollitia ea deleniti quaerat tenetur! 
+      </p>
+      <div class="content-details">
+        <div class="itens">
+          <div>Duração</div>
+          <div class="sub-details {{cardCurso.cor}}">{{ cardCurso.duration }}h</div>
+        </div>
+        <div class="itens barra">
+          <div>Modalidade</div>
+          <div class="sub-details {{cardCurso.cor}}">{{ cardCurso.modality }}</div>
+        </div>
+        <div class="itens">
+          <div>Tipo</div>
+          <div class="sub-details {{cardCurso.cor}}">{{ cardCurso.type }}</div>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="button back{{cardCurso.cor}}">Matricular-se agora</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

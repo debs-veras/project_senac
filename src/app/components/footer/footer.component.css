@@ -1,0 +1,64 @@
+.content, .content-principal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  
+  .itens{
+    margin: 10px 32px;
+    font-size: 18px;
+  }
+  
+  .image img{
+    width: 100px;
+    height: 80px;
+  }
+  
+  .content-icons{
+    display: flex;
+    margin: 10px 0px;
+  }
+  
+  .itens-icon{
+    margin: 5px;
+  }
+  .title{
+    color:#004A8D;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: block;
+    font-family: 'DM Sans', sans-serif; 
+  }
+  
+  p{
+    font-family: 'DM Sans', sans-serif; 
+    font-size: 18px;
+  }
+  
+  .content-footer{
+    background-color: #004A8D;
+    width: 100%;
+    display: flex;
+    padding: 10px 30px;
+  }
+  
+  .content-footer span{
+    color: #F78B1F;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif; 
+    line-height: 30px;
+    padding: 10px;
+  }
+  .copy{
+    display: inline;
+  }
+  
+  .direct{
+    width: 89%;
+    text-align: right;
+  }
+  .direct .todos{
+    color: #fff;
+  }
