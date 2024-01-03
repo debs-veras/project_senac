@@ -5,13 +5,13 @@
       <img src="../../../assets/logo.png" srcset="">
     </div>
 
-    <div class="itens colorblue">
-      <button (click)="toggleIcone()" mat-button [matMenuTriggerFor]="menu">Cursos
-        <fa-icon *ngIf="!iconeClicado"[icon]="['fas', 'chevron-down']"></fa-icon>
-        <fa-icon *ngIf="iconeClicado" [icon]="['fas', 'chevron-up']"></fa-icon>
+    <div class="itens {{ classeCSS['classeCurso'] }}">
+      <button (click)="toggleIcone('cursos','classeCurso')" mat-button [matMenuTriggerFor]="menu">Cursos
+      <fa-icon *ngIf="!iconeClicado['cursos']" [icon]="['fas', 'chevron-down']"></fa-icon>
+      <fa-icon *ngIf="iconeClicado['cursos']" [icon]="['fas', 'chevron-up']"></fa-icon>
       </button>
 
-      <mat-menu #menu="matMenu" (close)="toggleIcone()">
+      <mat-menu #menu="matMenu" (close)="toggleIcone('cursos', 'classeCurso')">
         <div class="menu-itens">
           <div class="subtitle">
             <span class="title">Áreas</span>
@@ -33,13 +33,13 @@
       </mat-menu>
     </div>
 
-    <div  class="itens">
-      <button (click)="toggleIcone()" mat-button [matMenuTriggerFor]="unidades">Unidades
-        <fa-icon *ngIf="!iconeClicado"[icon]="['fas', 'chevron-down']"></fa-icon>
-        <fa-icon *ngIf="iconeClicado" [icon]="['fas', 'chevron-up']"></fa-icon>
+    <div  class="itens {{ classeCSS['classeUnidade'] }}">
+      <button (click)="toggleIcone('unidades', 'classeUnidade')" mat-button [matMenuTriggerFor]="unidades">Unidades
+        <fa-icon *ngIf="!iconeClicado['unidades']" [icon]="['fas', 'chevron-down']"></fa-icon>
+        <fa-icon *ngIf="iconeClicado['unidades']" [icon]="['fas', 'chevron-up']"></fa-icon>
       </button>
 
-      <mat-menu #unidades="matMenu" (close)="toggleIcone()">
+      <mat-menu #unidades="matMenu" (close)="toggleIcone('unidades', 'classeUnidade')">
         <div class="menu-itens">
           <div class="subtitle">
             <span class="title">Unidades</span>
@@ -56,13 +56,13 @@
       </mat-menu>
     </div>
 
-    <div  class="itens">
-      <button (click)="toggleIcone()" mat-button [matMenuTriggerFor]="senac">Senac
-        <fa-icon *ngIf="!iconeClicado"[icon]="['fas', 'chevron-down']"></fa-icon>
-        <fa-icon *ngIf="iconeClicado" [icon]="['fas', 'chevron-up']"></fa-icon>
+    <div class="itens {{ classeCSS['classeSenac'] }}">
+      <button (click)="toggleIcone('senac', 'classeSenac')" mat-button [matMenuTriggerFor]="senac">Senac
+        <fa-icon *ngIf="!iconeClicado['senac']" [icon]="['fas', 'chevron-down']"></fa-icon>
+        <fa-icon *ngIf="iconeClicado['senac']" [icon]="['fas', 'chevron-up']"></fa-icon>
       </button>
 
-      <mat-menu #senac="matMenu" (close)="toggleIcone()">
+      <mat-menu #senac="matMenu" (close)="toggleIcone('senac', 'classeSenac')">
         <div class="menu-itens">
           <div class="subtitle">
             <button mat-menu-item>Senac Empregabilidade</button>
@@ -72,20 +72,44 @@
       </mat-menu>
     </div>
 
-    <div class="itens">
+    <div class="itens colorblue">
       <a href="#">Para Empresas</a>
     </div>
 
-    <div class="itens">
-      <a href="#">Blog</a>
+    <div class="itens colorblue">
+      <a>Blog</a>
     </div>
 
     <div class="itens">
       <div class="submit-line">
-        <input type="search" name="onchange" id="change" placeholder="O que você procura?">
+        <input mat-button [matMenuTriggerFor]="input" type="search" name="onchange" id="change" placeholder="O que você procura?">
+        <fa-icon class="search-icon" [icon]="['fas', 'magnifying-glass']"></fa-icon>
       </div>
-    </div>
 
+      <mat-menu [class.teste]="true" #input="matMenu">
+        <div class="menu-input">
+          <span class="title">Cursos</span>
+          <div class="subtitle-input">
+            <button mat-menu-item>Comunicação</button>
+            <button mat-menu-item>Gastronomia</button>
+            <button mat-menu-item>Gestão e negócios</button>
+            <button mat-menu-item>Idiomas</button>
+            <button mat-menu-item>Tecnologia da informação</button>
+            <button mat-menu-item>Saúde</button>
+          </div>
+
+          <span class="title">Páginas</span>
+          <div class="subtitle-input">
+            <button mat-menu-item>Comunicação</button>
+            <button mat-menu-item>Comunicação</button>
+            <button mat-menu-item>Comunicação</button>
+            <button mat-menu-item>Comunicação</button>
+          </div>  
+        </div>
+      </mat-menu>
+    </div>
+ 
   </div>
 </div>
-  
+
+<!-- <router-outleat></router-outleat> -->

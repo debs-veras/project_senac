@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -16,6 +17,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarrosselacessorapidoComponent } from './components/carrosselacessorapido/carrosselacessorapido.component';
 import { CarrosselunidadesComponent } from './components/carrosselunidades/carrosselunidades.component';
 import { CarrosselnoticiasComponent } from './components/carrosselnoticias/carrosselnoticias.component';
+import { CursoFiltroComponent } from './pages/curso-filtro/curso-filtro.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
@@ -24,7 +26,9 @@ import { IconsModule } from './icons/icons.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-
+import { MatRadioModule } from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -41,9 +45,13 @@ import { MatCardModule } from '@angular/material/card';
     CarrosselacessorapidoComponent,
     CardnoticiasComponent,
     CarrosselunidadesComponent,
-    CarrosselnoticiasComponent
+    CarrosselnoticiasComponent,
+    CursoFiltroComponent
   ],
   imports: [
+    MatCheckboxModule,
+    FormsModule,
+    MatRadioModule,
     MatCardModule,
     MatButtonModule,
     CarouselModule.forRoot(),

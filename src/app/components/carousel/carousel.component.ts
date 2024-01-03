@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CardCurso } from "../../interface/card-curso"
 import { CursosService } from '../../services/cursos.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-carousel',
@@ -11,7 +12,7 @@ import { CursosService } from '../../services/cursos.service';
 export class CarouselComponent implements OnInit {
   listas: CardCurso[] = [];
 
-  constructor(private cursosService: CursosService) {}
+  constructor(private cursosService: CursosService, private router: Router) {}
 
   obterTodosCursos(){
     this.cursosService.getAllHousingLocations().then(cursos => {
@@ -46,5 +47,9 @@ export class CarouselComponent implements OnInit {
       this.start--;
       this.aux = this.listas.slice(this.start, this.pause);
     } 
+  }
+
+  navigateToNewPage(){
+    this.router.navigate(['/curso-filtro']);
   }
 }

@@ -1,0 +1,56 @@
+<div class="content">
+  <div class="itens">
+    <div class="submit-line">
+      <input mat-button [matMenuTriggerFor]="input" type="search" name="onchange" id="change" placeholder="Ordenar por">
+      <fa-icon class="search-icon" [icon]="['fas', 'chevron-up']"></fa-icon>
+    </div>
+
+    <mat-menu #input="matMenu">
+      <div class="menu-input">
+        <div class="subtitle-input">
+          <button mat-menu-item>Cursos em destaques</button>
+          <button mat-menu-item>Próximas Turmas</button>
+          <button mat-menu-item>Promoções</button>
+          <button mat-menu-item>Senac Empreabilidade</button>
+          <button mat-menu-item>Senac Gratuidade</button>
+        </div>
+      </div>
+    </mat-menu>
+      
+    <section class="example-section">
+      <span class="title">Turno</span>
+      <mat-checkbox class="example-margin" [(ngModel)]="checked">Manhã</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Tarde</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Noite</mat-checkbox>
+    </section>
+
+    <section class="example-section">
+      <span class="title">Modalidade</span>
+      <mat-checkbox class="example-margin" [(ngModel)]="checked">Presencial</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Ensino a distância (EAD)</mat-checkbox>
+    </section>
+
+    <section class="example-section">
+      <span class="title">Tipo</span>
+      <mat-checkbox class="example-margin" [(ngModel)]="checked">Livre</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">EAD</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Idiomas</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Técnicos</mat-checkbox>
+    </section>      
+
+    <section class="example-section">
+      <span class="title">Categoria</span>
+      <mat-checkbox class="example-margin" [(ngModel)]="checked">Beleza e Estética</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Comércio</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Comunicação</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Desing</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Gastronomia</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Idiomas</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Informática</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Saúde</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Segurança</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Turismo</mat-checkbox>
+    </section>
+
+  </div>
+</div>

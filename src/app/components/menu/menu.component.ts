@@ -8,23 +8,18 @@ import { MatMenuTrigger } from '@angular/material/menu';
 })
 
 export class MenuComponent {
-  @ViewChild(MatMenuTrigger) trigger!: MatMenuTrigger;
-  classeCSS: string = 'colorblue';
+  @ViewChild(MatMenuTrigger) menuTrigger!: MatMenuTrigger;
 
-  iconeClicado: boolean = false;
-
-  toggleIcone(){
-    this.iconeClicado = !this.iconeClicado;
-
-  }
-
-  abrirMenu(){
-    this.trigger.openMenu();
-    this.toggleIcone();
-  }
-
-  fecharMenu(){
-    this.trigger.closeMenu();
-    this.toggleIcone();
+  iconeClicado: { [key: string]: boolean } = {};
+  
+  classeCSS: { [key: string]: string } = {
+    'classeCurso': 'colorblue',
+    'classeUnidade': 'colorblue',
+    'classeSenac': 'colorblue'
+  };
+  
+  toggleIcone(botao: string, classe: string){
+    this.iconeClicado[botao] = !this.iconeClicado[botao];
+    this.classeCSS[classe] = (this.classeCSS[classe] == "colorblue") ? this.classeCSS[classe] = "colororange" : this.classeCSS[classe] = "colorblue";
   }
 }
