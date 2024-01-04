@@ -1,7 +1,7 @@
 .title{
   color: #004A8D;
   font-weight: bold;
-  padding: 5px;
+  padding: 0 10px;
 }
 
 .content{
@@ -95,4 +95,13 @@
   border-radius: 5px;
   margin: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.link{
+  font-size: 10px;
+  width: 100%;
+  text-align: right;
+  padding: 5px;
+  color: rgba(247, 148, 29);
+  font-weight: bold;
 }

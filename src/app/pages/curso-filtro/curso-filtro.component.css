@@ -1,3 +1,7 @@
+.content{
+  font-size: 14px;
+}
+
 .search-icon{
   position: absolute;
   top: 50%;
@@ -10,7 +14,6 @@
 .subtitle-input button{
   color: rgba(70, 65, 65, 0.8);
   padding: 5px ;
-  font-size: 14px;
   text-align: center;
 }
 
@@ -19,6 +22,7 @@
 }
 
 .itens input{
+  padding-left: 10px;
   width: 200px;
   height: 38px;
   border-radius: 5px;
@@ -29,12 +33,7 @@
   margin: 5px;
 }
 
-.itens{
-  margin: 20px;
-}
-
-.title{
-  font-size: 14px;
+.title, .subtitle{
   color: rgba(70, 65, 65);
   font-weight: bold;
 }
@@ -48,4 +47,17 @@
 .example-margin{
   margin: 0;
   padding: 0;
+}
+
+.content{
+  margin-left: 25px;
+}
+
+.title-itens{
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtitle{
+  color: rgba(242, 139, 60);
 }

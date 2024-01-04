@@ -10,7 +10,8 @@ import { Unidades } from '../../interface/unidades'
 export class CarrosselunidadesComponent {
   listas: Unidades[] = [];
   aux : Unidades [] = [];
-  
+  larguraDaTela: number = window.innerWidth;
+
   obterTodosUnidades(){
     this.listas = [
       {
@@ -38,11 +39,15 @@ export class CarrosselunidadesComponent {
         imgurl: "../../../assets/images/unidades/caico.jpg"
       }
     ];
-    this.aux = this.listas.slice(0, this.numitem);
+    if(this.larguraDaTela >= 720 && this.larguraDaTela <= 1024)
+      this.pause = 2;
+    else if(this.larguraDaTela >= 320 && this.larguraDaTela < 720) 
+      this.pause = 1;
+    else
+      this.pause = 3; 
+    this.aux = this.listas.slice(0, this.pause);
   }
    
-  numitem = 3;
-  itemUltimo = 3;
   start = 0;
   pause = 3;
   

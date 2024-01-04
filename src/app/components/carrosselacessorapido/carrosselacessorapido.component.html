@@ -11,16 +11,9 @@
         <fa-icon (click) = "nextSlider()" [icon]="['fas', 'chevron-right']"></fa-icon>
       </li>
     </ul>
-
     <ul>
-      <li *ngFor="let item of aux; let i=index" class="itens" [ngClass]="{'selected': i >= start && i < pause - 1}" (click)="selectcard(i+1)">     
-        
+      <li *ngFor="let item of aux2; let i=index" class="itens" [ngClass]="{'selected': i >= start && i < pause - 2}" (click)="selectcard(i+1)"> 
       </li>
-    </ul>
-
-
-
-
-     
+    </ul> 
   </div>
 </div>

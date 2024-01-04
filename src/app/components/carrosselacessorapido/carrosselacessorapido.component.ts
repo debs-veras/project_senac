@@ -10,10 +10,11 @@ import { Acessorapido} from "../../interface/acessorapido"
 export class CarrosselacessorapidoComponent {
   listas: Acessorapido[] = [];
   aux : Acessorapido [] = [];
-  responsiveOptions: any[] | undefined;
+  aux2 : Acessorapido [] = [];
   classeCSS: { [key: number]: string } = {};
+  larguraDaTela: number = window.innerWidth;
 
-  obterTodosAcessos() {
+  obterTodosAcessos(){
     this.listas = [
       {
         id: 0,
@@ -44,12 +45,21 @@ export class CarrosselacessorapidoComponent {
         imgurl:"card1"
       }
      ];
-      this.aux = this.listas.slice(0, 3);
+    if(this.larguraDaTela >= 720 && this.larguraDaTela <= 1024)
+      this.pause = 2;
+    else if(this.larguraDaTela >= 320 && this.larguraDaTela < 720) 
+      this.pause = 1;
+    else
+      this.pause = 3; 
+
+    this.aux = this.listas.slice(0, this.pause);
+    this.aux2 = this.listas.slice(0, 2);
   }
   
   start = 0;
-  pause = 3;
-  
+  pause = 0;
+  teste : number = 0;
+
   ngOnInit( ) : void {
     this.obterTodosAcessos();
   }
@@ -71,13 +81,11 @@ export class CarrosselacessorapidoComponent {
   }
 
   selectcard(index: number){
-    this.pause = this.listas.length / 2;
-    if (index >= 1 && index <= this.listas.length){
+    if(index >= 0 && index <= this.listas.length){
       this.start = index - 1;
       this.pause = Math.min(index + 2, this.listas.length);
       this.aux = this.listas.slice(this.start, this.pause);
     }
-
     console.log(this.start, this.pause, index);
   }
 }

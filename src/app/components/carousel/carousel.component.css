@@ -7,7 +7,7 @@ ul{
 }
   
 ul li{
-  margin: 20px;
+  margin: 15px;
 }
 
 .icons{
@@ -22,7 +22,7 @@ ul li{
 
 .link{
   text-align: right;
-  margin: 0 6%;
+  margin: 0 5%;
 }
 
 .icons-filtro{
@@ -30,7 +30,12 @@ ul li{
   color: rgba(128, 128, 128, 1);
 }
 
-.container-icon{
+.container-icon-left{
+  width: 100%;
+  text-align: left;
+}
+
+.container-icon-right{
   width: 100%;
   text-align: right;
 }

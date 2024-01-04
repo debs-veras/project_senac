@@ -10,8 +10,7 @@ import { Noticias } from '../../interface/noticias';
 export class CarrosselnoticiasComponent {
   listas: Noticias[] = [];
   aux : Noticias [] = [];
-
-  responsiveOptions: any[] | undefined;
+  larguraDaTela: number = window.innerWidth;
 
   obterTodosNoticias(){
     this.listas = [
@@ -48,11 +47,16 @@ export class CarrosselnoticiasComponent {
         imgurl: "../../../assets/images/banner1.png"
       }
      ];
-    this.aux = this.listas.slice(0, this.numitem);
+
+    if(this.larguraDaTela >= 720 && this.larguraDaTela <= 1024)
+      this.pause = 2;
+    else if(this.larguraDaTela >= 320 && this.larguraDaTela < 720) 
+      this.pause = 1;
+    else
+      this.pause = 3; 
+    this.aux = this.listas.slice(0, this.pause);
   }
 
-  numitem = 3;
-  itemUltimo = 3;
   start = 0;
   pause = 3;
   

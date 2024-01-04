@@ -1,5 +1,5 @@
 <div class="container-carousel">
-  <div class="container-icon">
+  <div [ngClass]="{'container-icon-left': pag, 'container-icon-right': !pag}" class="container-icon-left">
     <fa-icon (click)="navigateToNewPage()" class="icons-filtro" [icon]="['fas', 'sliders']"></fa-icon>
   </div>
   <div class="card-container">

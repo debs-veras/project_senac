@@ -11,24 +11,28 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 export class CarouselComponent implements OnInit {
   listas: CardCurso[] = [];
-
+  larguraDaTela: number = window.innerWidth;
   constructor(private cursosService: CursosService, private router: Router) {}
-
+  
   obterTodosCursos(){
     this.cursosService.getAllHousingLocations().then(cursos => {
       this.listas = cursos;
-      console.log('Cursos:', cursos);
-      this.aux = cursos.slice(0, this.numitem);
+      if(this.larguraDaTela >= 720 && this.larguraDaTela <= 1024)
+        this.pause = 2;
+      else if(this.larguraDaTela >= 320 && this.larguraDaTela < 720) 
+        this.pause = 1;
+      else
+        this.pause = 3; 
+      this.aux = cursos.slice(0, this.pause);
     });
   }
-   
+  
   aux : CardCurso [] = [ ];
-   
-  numitem = 3;
-  itemUltimo = 3;
+  pag = true;
+  
   start = 0;
-  pause = 3;
-
+  pause = 0;
+  
   ngOnInit( ) : void {
     this.obterTodosCursos();
   }
@@ -50,6 +54,10 @@ export class CarouselComponent implements OnInit {
   }
 
   navigateToNewPage(){
-    this.router.navigate(['/curso-filtro']);
+    if(this.pag)
+      this.router.navigate(['/curso-filtro']);
+    else
+      this.router.navigate(['/']);
+    this.pag = !this.pag;
   }
 }
