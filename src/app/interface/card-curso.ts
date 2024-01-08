@@ -6,5 +6,6 @@ export interface CardCurso {
     duration: number;
     typecurso: string;
     urlimg: string;
+    turno: string;
     cor: string;
 }

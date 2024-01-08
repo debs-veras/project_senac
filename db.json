@@ -7,6 +7,7 @@
     "duration": 40,
     "typecurso": "Beleza e Estética",
     "urlimg": "../../../assets/images/cursos/curso1.png",
+    "turno": "Manhã",
     "cor": "orange"
   },
   {
@@ -17,6 +18,7 @@
     "duration": 40,
     "typecurso": "Gastronomia e Alimentação",
     "urlimg": "../../../assets/images/cursos/curso2.jpg",
+    "turno": "Tarde",
     "cor":"green-dark"
   },
   {
@@ -27,6 +29,7 @@
     "duration": 40,
     "typecurso": "Beleza e Estética",
     "urlimg": "../../../assets/images/cursos/curso3.jpeg",
+    "turno":"Noite",
     "cor": "orange"
   },
   {
@@ -37,6 +40,7 @@
     "duration": 40,
     "typecurso": "Comércio e Vendas",
     "urlimg": "../../../assets/images/cursos/curso4.jpg",
+    "turno":"Manhã",
     "cor": "lilac"
   }]
 }

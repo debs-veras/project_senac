@@ -20,51 +20,51 @@
     <section class="example-section">
       <div class="title-itens">
         <span class="title">Turno</span> 
-        <span class="subtitle">Limpar</span> 
+        <a (click)="limparTurno()" class="subtitle">Limpar</a> 
       </div>
 
-      <mat-checkbox class="example-margin" [(ngModel)]="checked">Manhã</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Tarde</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Noite</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin"  [(ngModel)]="turnoFilter.manha">Manhã</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="turnoFilter.tarde">Tarde</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="turnoFilter.noite">Noite</mat-checkbox>
     </section>
 
     <section class="example-section">
       <div class="title-itens">
         <span class="title">Modalidade</span>
-        <span class="subtitle">Limpar</span> 
+        <a (click)="limparModalidade()" class="subtitle">Limpar</a> 
       </div>
-      <mat-checkbox class="example-margin" [(ngModel)]="checked">Presencial</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Ensino a distância (EAD)</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="modalidadeFilter.presencial">Presencial</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="modalidadeFilter.online">Ensino a distância (EAD)</mat-checkbox>
     </section>
 
     <section class="example-section">
       <div class="title-itens">
         <span class="title">Tipo</span>
-        <span class="subtitle">Limpar</span> 
+        <a (click)="limparTipo()" class="subtitle">Limpar</a> 
       </div>
 
-      <mat-checkbox class="example-margin" [(ngModel)]="checked">Livre</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">EAD</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Idiomas</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Técnicos</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="tipoFilter.livre">Livre</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="tipoFilter.ead">EAD</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="tipoFilter.idiomas">Idiomas</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="tipoFilter.tecnicos">Técnicos</mat-checkbox>
     </section>      
 
     <section class="example-section">
       <div class="title-itens">  
         <span class="title">Categoria</span>
-        <span class="subtitle">Limpar</span> 
+        <a (click)="limparCategoria()" class="subtitle">Limpar</a> 
       </div>
 
-      <mat-checkbox class="example-margin" [(ngModel)]="checked">Beleza e Estética</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Comércio</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Comunicação</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Desing</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Gastronomia</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Idiomas</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Informática</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Saúde</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Segurança</mat-checkbox>
-      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Turismo</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="categoriaFilter.beleza"x  >Beleza e Estética</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="categoriaFilter.comercio">Comércio</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="categoriaFilter.comunicacao">Comunicação</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="categoriaFilter.design">Desing</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="categoriaFilter.gastronomia">Gastronomia</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="categoriaFilter.idiomas">Idiomas</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="categoriaFilter.informatica">Informática</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="categoriaFilter.saude">Saúde</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="categoriaFilter.seguranca">Segurança</mat-checkbox>
+      <mat-checkbox (click) = "aplicarFiltro()" class="example-margin" [(ngModel)]="categoriaFilter.turismo">Turismo</mat-checkbox>
     </section>
 
   </div>
