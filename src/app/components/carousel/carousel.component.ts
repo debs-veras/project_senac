@@ -3,7 +3,7 @@ import { CardCurso } from "../../interface/card-curso"
 import { CursosService } from '../../services/cursos.service';
 import { Router } from '@angular/router';
 import { FiltroService } from '../../services/filtro.service';
-
+import { SharedService } from '../../services/shared.service';
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
@@ -36,13 +36,18 @@ export class CarouselComponent implements OnInit {
     'ead': "EAD", 
     'tecnicos': "Técnico"
   };
+  
   pag = true;
   filtros: any = {};
   start = 0;
   pause = 0;
   
-  constructor(private cursosService: CursosService, private router: Router, private filtroService: FiltroService) {}
+  constructor(private sharedService: SharedService, private cursosService: CursosService, private router: Router, private filtroService: FiltroService) {}
   
+  mudarEstiloNoPai(novoEstilo: string){
+    this.sharedService.modificarEstilo(novoEstilo);
+  }
+
   obterTodosCursos(){
     this.cursosService.getAllHousingLocations().then(cursos => {
       this.listas = cursos;
@@ -136,9 +141,12 @@ export class CarouselComponent implements OnInit {
     if(this.pag){
       this.router.navigate(['/']);
       this.obterTodosCursos();
+      this.mudarEstiloNoPai('center');
     }
-    else
-      this.router.navigate(['/curso-filtro']);
+    else{
+      this.router.navigate(['/curso-filtro', this.pag]);
+      this.mudarEstiloNoPai('bet');
+    }
     this.pag = !this.pag;
   }
 }

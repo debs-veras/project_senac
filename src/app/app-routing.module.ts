@@ -4,7 +4,7 @@ import { CursoFiltroComponent } from './pages/curso-filtro/curso-filtro.componen
 
 const routes: Routes = [
   { 
-    path: 'curso-filtro', 
+    path: 'curso-filtro/:pag', 
     component: CursoFiltroComponent
   },
 ];

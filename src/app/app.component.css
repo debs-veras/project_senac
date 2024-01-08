@@ -8,5 +8,12 @@
 
 .content-carrossel{
   display: flex;
-  justify-content: center;
+}
+
+.center{
+  justify-content:center;
+}
+
+.bet{
+  justify-content: left;
 }
