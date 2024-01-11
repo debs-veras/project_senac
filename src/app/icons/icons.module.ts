@@ -19,6 +19,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faSliders } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   exports: [FontAwesomeModule],
@@ -29,6 +30,6 @@ import { faSliders } from '@fortawesome/free-solid-svg-icons';
 
 export class IconsModule {
   constructor(library: FaIconLibrary){
-    library.addIcons(faFacebook, faInstagram, faXTwitter, faYoutube, faLinkedin, faClock, faPhone, faEnvelope, faLocationArrow, faCalendar, faArrowRight, faArrowLeft, faChevronRight, faChevronLeft, faChevronDown, faChevronUp, faMagnifyingGlass, faSliders);
+    library.addIcons(faFacebook, faInstagram, faXTwitter, faYoutube, faLinkedin, faClock, faPhone, faEnvelope, faLocationArrow, faCalendar, faArrowRight, faArrowLeft, faChevronRight, faChevronLeft, faChevronDown, faChevronUp, faMagnifyingGlass, faSliders, faGraduationCap);
   }
 }

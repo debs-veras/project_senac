@@ -4,17 +4,19 @@ import { CursosService } from '../../services/cursos.service';
 import { Router } from '@angular/router';
 import { FiltroService } from '../../services/filtro.service';
 import { SharedService } from '../../services/shared.service';
+
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.css'
 })
 
-export class CarouselComponent implements OnInit {
+export class CarouselComponent implements OnInit{
   listas: CardCurso[] = [];
   aux : CardCurso [] = [];
   aux3 : CardCurso [] = [];
   aux4 : CardCurso [] = [];
+  
   larguraDaTela: number = window.innerWidth;
   aux2: { [categoria: string]: string } = {
     'beleza': "Beleza e Estética",
@@ -137,14 +139,14 @@ export class CarouselComponent implements OnInit {
     } 
   }
   
-  navigateToNewPage(){
+  navigateToNewPage(){  
     if(this.pag){
       this.router.navigate(['/']);
       this.obterTodosCursos();
       this.mudarEstiloNoPai('center');
     }
     else{
-      this.router.navigate(['/curso-filtro', this.pag]);
+      this.router.navigate(['/curso-filtro']);
       this.mudarEstiloNoPai('bet');
     }
     this.pag = !this.pag;

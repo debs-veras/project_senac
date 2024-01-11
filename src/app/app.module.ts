@@ -17,7 +17,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarrosselacessorapidoComponent } from './components/carrosselacessorapido/carrosselacessorapido.component';
 import { CarrosselunidadesComponent } from './components/carrosselunidades/carrosselunidades.component';
 import { CarrosselnoticiasComponent } from './components/carrosselnoticias/carrosselnoticias.component';
-import { CursoFiltroComponent } from './pages/curso-filtro/curso-filtro.component';
+import { CursoFiltroComponent } from './components/curso-filtro/curso-filtro.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
@@ -29,6 +29,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { DetailscursoComponent } from './pages/detailscurso/detailscurso.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     CardnoticiasComponent,
     CarrosselunidadesComponent,
     CarrosselnoticiasComponent,
-    CursoFiltroComponent
+    CursoFiltroComponent,
+    DetailscursoComponent,
+    HomeComponent
   ],
   imports: [
     MatCheckboxModule,

@@ -2,8 +2,16 @@
   display: flex;
   justify-content: center;  
 }
-  
+
+.container-button{
+  padding: 0px;
+  margin: 0;
+  height: 100%;
+  border-radius: 0 0 5px 5px;
+}
+
 .example-card{
+  padding: 0px;
   width: 340px;
   height: 473px;
 }
@@ -52,12 +60,14 @@
   border-right: 1px solid #F06A0F;
 }
   
-button{
+a{
   color: #fff;
   width: 100%;
   height: 49px;
   margin: 0px;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
   
 .example-card img{

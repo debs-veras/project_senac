@@ -27,8 +27,8 @@
         </div>
       </div>
     </mat-card-content>
-    <mat-card-actions>
-      <button class="button back{{cardCurso.cor}}">Matricular-se agora</button>
+    <mat-card-actions class="container-button back{{cardCurso.cor}}">
+      <a (click)="navigateToCursoDetail(cardCurso)" class="button ">Matricular-se agora</a>
     </mat-card-actions>
   </mat-card>
 </div>

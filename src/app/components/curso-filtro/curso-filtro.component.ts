@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FiltroService } from '../../services/filtro.service';
+
 @Component({
   selector: 'app-curso-filtro',
   templateUrl: './curso-filtro.component.html',
