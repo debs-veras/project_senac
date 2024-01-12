@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CardCurso } from '../../interface/card-curso';
+import { Categoria } from '../../interface/categoria';
 
 @Component({
   selector: 'app-detailscurso',
@@ -9,7 +9,7 @@ import { CardCurso } from '../../interface/card-curso';
 })
 
 export class DetailscursoComponent implements OnInit{
-  curso !: CardCurso
+  curso !: Categoria
 
   constructor(private route: ActivatedRoute) {}
 
@@ -17,14 +17,11 @@ export class DetailscursoComponent implements OnInit{
     this.route.queryParams.subscribe(params => {
       this.curso = {
         id: params['id'],
-        type: params['type'],
         name: params['name'],
-        modality: params['modality'],
-        duration: params['duration'],
-        typecurso: params['typecurso'],
-        urlimg: params['urlimg'],
-        turno: params['turno'],
-        cor: params['cor']
+        cor: params['cor'],
+        urlimgbanner: params['urlimgbanner'],
+        img1: params['img1'],
+        img2: params['img2']
       };
     });
   }

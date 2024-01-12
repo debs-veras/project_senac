@@ -18,6 +18,8 @@ import { CarrosselacessorapidoComponent } from './components/carrosselacessorapi
 import { CarrosselunidadesComponent } from './components/carrosselunidades/carrosselunidades.component';
 import { CarrosselnoticiasComponent } from './components/carrosselnoticias/carrosselnoticias.component';
 import { CursoFiltroComponent } from './components/curso-filtro/curso-filtro.component';
+import { HomeComponent } from './pages/home/home.component';
+import { DetailscursoComponent } from './pages/detailscurso/detailscurso.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
@@ -29,9 +31,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { DetailscursoComponent } from './pages/detailscurso/detailscurso.component';
-import { HomeComponent } from './pages/home/home.component';
-
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -64,7 +64,8 @@ import { HomeComponent } from './pages/home/home.component';
     AppRoutingModule,
     MatMenuModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
