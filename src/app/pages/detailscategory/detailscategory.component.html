@@ -42,7 +42,7 @@
   
   <div class="content-details">
      <div class="details-itens">
-       <fa-icon class="icons-details teste2" style="color: {{ curso.cor }};" [icon]="['fas', 'graduation-cap']"></fa-icon> 
+       <fa-icon class="icons-details teste2" [style.color]="curso.cor" [icon]="['fas', 'graduation-cap']"></fa-icon> 
        <span class="title-details">Formação Completa</span>
        <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis libero repellat velit enim omnis modi voluptas, ullam assumenda.
@@ -56,7 +56,7 @@
        </p>
     </div>
     <div class="details-itens">
-      <fa-icon class="icons-details teste2" style="color: {{ curso.cor }};" [icon]="['fas', 'star']"></fa-icon> 
+      <fa-icon class="icons-details teste2" [style.color]="curso.cor" [icon]="['fas', 'star']"></fa-icon> 
       <span class="title-details">Cursos</span>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis libero repellat velit enim omnis modi voluptas, ullam assumenda.
@@ -65,7 +65,7 @@
   </div>
 
   <div class="description">
-    <div class="description-container" style="border-top-color: {{ curso.cor }}">
+    <div class="description-container" [style.borderTopColor]="curso.cor">
       <div class="description-title">{{ curso.name }}</div>
       <p>
         These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
@@ -74,37 +74,36 @@
         Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.   
       </p>
     </div>
+
+    <section class="grafico">
+      <div class="title-graf">Média salarial</div>
     
-  <section class="grafico">
-    <div class="title-graf">Média salarial</div>
-    <span class="texto-title">Iniciante</span>
-    <div class="teste">
-      <div class="barras bar1 {{ curso.background }}">
-      </div>
-      <span class="texto">R$ 4.000/mês</span>
-    </div>
-    <span class="texto-title">Formado na área</span>
+      <span class="texto-title">Iniciante</span>
+      <div class="teste">
+        <div class="barras bar1 {{ curso.background }}"></div>
+        <span class="texto">R$ 4.000/mês</span>
+     </div>
+   
+     <span class="texto-title">Formado na área</span>
+     <div class="teste">
+       <div class="barras bar2 {{ curso.background }}"></div>
+       <span class="texto">R$ 7.000/mês</span>
+     </div>
     
-    <div class="teste">
-      <div class="barras bar2 {{ curso.background }}">
-      </div>
-      <span class="texto">R$ 7.000/mês</span>
-    </div>
-    <span class="texto-title">Consolidado na área</span>
-    <div class="teste">
-      <div class="barras bar3 {{ curso.background }}">
-      </div>
+     <span class="texto-title">Consolidado na área</span>
+     <div class="teste">
+      <div class="barras bar3 {{ curso.background }}"></div>
       <span class="texto">R$ 10.000/mês</span>
-    </div>
-    <div class="texto-title fonte">*Fonte: colocar uma fonte</div>
-  </section>
+     </div>
+     <div class="texto-title fonte">*Fonte: colocar uma fonte</div>
+    </section>
   </div>
   
   <div class="description">
-    <div class="description-container2" style=" box-shadow: -15px -15px 0px 0px {{ curso.cor }};">
+    <div class="description-container2" [style.boxShadow]="'-15px -15px 0px 0px ' + curso.cor">
       <img src={{curso.img1}}  alt="" srcset="">
     </div>
-    <div class="description-container" style="border-top-color: {{ curso.cor }}">
+    <div class="description-container" [style.border-top-color]="curso.cor">
       <div class="description-title">O que faz um profissonal da área da beleza?</div>
       <p>
         These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
@@ -123,24 +122,24 @@
 
     <div class="option">
       <div class="title-option">
-        <span class="subtitle" style="color: {{ curso.cor }};">O QUE NOSSOS CURSOS OFERECEM</span>
+        <span class="subtitle" [style.color]="curso.cor">O QUE NOSSOS CURSOS OFERECEM</span>
         <div class="description-title">O que faz um profissonal da área da beleza?</div>
       </div>
 
       <div class="checks">
-        <span class="option-check"  style="color: {{ curso.cor }};"><fa-icon class="icons-check" [icon]="['fas', 'check-circle']"></fa-icon>
+        <span class="option-check" [style.color]="curso.cor"><fa-icon class="icons-check" [icon]="['fas', 'check-circle']"></fa-icon>
         These cases are perfectly simple and easy to distinguish. 
         </span>
-        <span class="option-check" style="color: {{ curso.cor }};"><fa-icon class="icons-check" [icon]="['fas', 'check-circle']"></fa-icon>
+        <span class="option-check" [style.color]="curso.cor"><fa-icon class="icons-check" [icon]="['fas', 'check-circle']"></fa-icon>
           These cases are perfectly simple and easy to distinguish. 
         </span>
-        <span class="option-check" style="color: {{ curso.cor }};"><fa-icon class="icons-check" [icon]="['fas', 'check-circle']"></fa-icon>
+        <span class="option-check" [style.color]="curso.cor"><fa-icon class="icons-check" [icon]="['fas', 'check-circle']"></fa-icon>
           These cases are perfectly simple and easy to distinguish. 
         </span>
-        <span class="option-check" style="color: {{ curso.cor }};"><fa-icon class="icons-check" [icon]="['fas', 'check-circle']"></fa-icon>
+        <span class="option-check" [style.color]="curso.cor"><fa-icon class="icons-check" [icon]="['fas', 'check-circle']"></fa-icon>
           These cases are perfectly simple and easy to distinguish. 
         </span>
-        <span class="option-check" style="color: {{ curso.cor }};"><fa-icon class="icons-check" [icon]="['fas', 'check-circle']"></fa-icon>
+        <span class="option-check" [style.color]="curso.cor"><fa-icon class="icons-check" [icon]="['fas', 'check-circle']"></fa-icon>
           These cases are perfectly simple and easy to distinguish. 
         </span>
       </div>

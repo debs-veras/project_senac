@@ -1,2 +1,43 @@
 <app-header></app-header>
 <app-menu></app-menu>
+<div class="content">
+      <div class="content-title" [style.backgroundColor]="curso.cor">
+        <div class="itens">
+          Home
+        </div>
+        <div class="itens">
+          <fa-icon [icon]="['fas', 'chevron-right']"></fa-icon>
+        </div>
+        <div class="itens">
+          Cursos
+        </div>
+        <div class="itens">
+          <fa-icon [icon]="['fas', 'chevron-right']"></fa-icon>
+        </div>
+        <div class="itens">
+          {{ curso.typecurso }}
+        </div>
+        <div class="itens">
+          <fa-icon [icon]="['fas', 'chevron-right']"></fa-icon>
+        </div>
+        <div class="itens">
+         {{ curso.name }}
+        </div>
+    </div>
+  
+    <mat-card class="example-card">
+      <div class="text">
+        <div class="title">
+          {{ curso.name }}
+        </div>
+        <div class="descript">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum alias laboriosam nam odio quaerat veritatis aut ipsam iste fuga ipsum, beatae error.
+        </div>
+        <div class="content-button">
+          <button class="button">Inscreva-se</button>
+        </div>
+      </div>
+    </mat-card>
+    
+  
+  </div>

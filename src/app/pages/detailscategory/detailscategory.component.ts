@@ -25,7 +25,6 @@ export class DetailscategoryComponent implements OnInit{
         img2: params['img2']
       };
     });
-    console.log(this.curso.cor)
   }
 
 }
