@@ -6,7 +6,7 @@
     "modality": "Presencial",
     "duration": 40,
     "typecurso": "Beleza e Estética",
-    "urlimg": "../../../assets/images/cursos/curso1.png",
+    "urlimg": "../../../assets/images/cursos/curso1.jpg",
     "turno": "Manhã",
     "cor": "orange"
   },
@@ -42,5 +42,16 @@
     "urlimg": "../../../assets/images/cursos/curso4.jpg",
     "turno":"Manhã",
     "cor": "lilac"
+  },
+  {
+    "id": 5,
+    "type": "EAD",
+    "name": "Estruturas de Dados em Python",
+    "modality": "Online",
+    "duration": 40,
+    "typecurso": "Tecnologia da Informação",
+    "urlimg": "../../../assets/images/cursos/curso5.webp",
+    "turno":"Tarde",
+    "cor": "blue"
   }]
 }

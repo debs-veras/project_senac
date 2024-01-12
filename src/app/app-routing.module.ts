@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CursoFiltroComponent } from './components/curso-filtro/curso-filtro.component';
-import { DetailscursoComponent } from './pages/detailscurso/detailscurso.component';
+import { DetailscategoryComponent } from './pages/detailscategory/detailscategory.component';
 import { HomeComponent } from './pages/home/home.component';
+import { DetailcursoComponent } from './pages/detailcurso/detailcurso.component';
 
 export const routes: Routes = [
   {
@@ -13,9 +14,13 @@ export const routes: Routes = [
     ]
   },
   { 
+    path: 'curso-category', 
+    component: DetailscategoryComponent
+  }, 
+  { 
     path: 'curso-detail', 
-    component: DetailscursoComponent
-  },
+    component: DetailcursoComponent
+  }
 ];
 
 @NgModule({

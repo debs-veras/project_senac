@@ -24,7 +24,8 @@ export class MenuComponent {
       {
         id: 0,
         name: "Beleza e Estética",
-        cor: "orange",
+        cor: "#F06A0F",
+        background: "backorange",
         urlimgbanner: "../../../assets/images/categorias/beleza/banner.jpg", 
         img1: "../../../assets/images/categorias/beleza/img1.jpg",
         img2: "../../../assets/images/categorias/beleza/img2.jpg"
@@ -32,10 +33,11 @@ export class MenuComponent {
       {
         id: 1,
         name: "Tecnologia",
-        cor: "green-dark",
+        cor: "#447EF2",
+        background: "backblue",
         urlimgbanner: "../../../assets/images/categorias/tecnologia/banner.jpg", 
-        img1: "../../../assets/images/categorias/beleza/img1.jpg",
-        img2: "../../../assets/images/categorias/beleza/img2.jpg"
+        img1: "../../../assets/images/categorias/tecnologia/img1.jpg",
+        img2: "../../../assets/images/categorias/tecnologia/img2.jpg"
       },
      ];
   }
@@ -43,7 +45,7 @@ export class MenuComponent {
   constructor(private router: Router) {}
   
   navigateToCursoDetail(curso: Categoria) {
-    this.router.navigate(['/curso-detail'],  {queryParams: curso});
+    this.router.navigate(['/curso-category'],  {queryParams: curso});
   }
 
   toggleIcone(botao: string, classe: string){

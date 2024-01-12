@@ -45,12 +45,15 @@ button{
   
 .background-card1{
   background-image: url("../../../assets/images/acesso-rapido/senac-gratuito.jpg");
+  background-position: 50% 50%;
 }
   
 .background-card2{
   background-image: url("../../../assets/images/acesso-rapido/senac-turmas.jpg");
+  background-position: 50% 50%;
 }
   
 .background-card3{
-  background-image: url("../../../assets/images/acesso-rapido/senac-empregabilidade.png");
+  background-image: url("../../../assets/images/acesso-rapido/senac-empregabilidade.jpg");
+  background-position: 50% 50%;
 }
