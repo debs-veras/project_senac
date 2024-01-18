@@ -8,6 +8,8 @@ import { CardCurso } from '../../interface/card-curso';
 })
 export class DetailcursoComponent implements OnInit{
   curso !: CardCurso
+  iconeClicado: { [key: string]: boolean } = {};
+  text: { [key: string]: string } = {};
 
   constructor(private route: ActivatedRoute) {}
 
@@ -25,5 +27,15 @@ export class DetailcursoComponent implements OnInit{
         cor: params['cor']
       };
     });
+  }
+
+  toggleIcone(botao: string){
+
+    this.iconeClicado[botao] = !this.iconeClicado[botao];
+    if(this.iconeClicado[botao])
+      this.text[botao] = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    else{
+      this.text[botao] = "";
+    }
   }
 }

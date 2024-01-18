@@ -33,6 +33,8 @@ import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { DetailcursoComponent } from './pages/detailcurso/detailcurso.component';
+import { DetailunidadeComponent } from './pages/detailunidade/detailunidade.component';
+import { DetailcompanyComponent } from './pages/detailcompany/detailcompany.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { DetailcursoComponent } from './pages/detailcurso/detailcurso.component'
     CursoFiltroComponent,
     HomeComponent,
     DetailcursoComponent,
-    DetailscategoryComponent
+    DetailscategoryComponent,
+    DetailunidadeComponent,
+    DetailcompanyComponent
   ],
   imports: [
     MatCheckboxModule,

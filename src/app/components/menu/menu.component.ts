@@ -47,6 +47,14 @@ export class MenuComponent {
   navigateToCursoDetail(curso: Categoria) {
     this.router.navigate(['/curso-category'],  {queryParams: curso});
   }
+  
+  navigateToUnidadeDetail() {
+    this.router.navigate(['/curso-unidade']);
+  }
+
+  navigateToCompanyDetail() {
+    this.router.navigate(['/curso-company']);
+  }
 
   toggleIcone(botao: string, classe: string){
     this.iconeClicado[botao] = !this.iconeClicado[botao];

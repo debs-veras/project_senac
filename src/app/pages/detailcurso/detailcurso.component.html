@@ -1,31 +1,31 @@
 <app-header></app-header>
 <app-menu></app-menu>
 <div class="content">
-      <div class="content-title" [style.backgroundColor]="curso.cor">
-        <div class="itens">
+  <div class="content-title">
+        <div class="itens-title">
           Home
         </div>
-        <div class="itens">
+        <div class="itens-title">
           <fa-icon [icon]="['fas', 'chevron-right']"></fa-icon>
         </div>
-        <div class="itens">
+        <div class="itens-title">
           Cursos
         </div>
-        <div class="itens">
+        <div class="itens-title">
           <fa-icon [icon]="['fas', 'chevron-right']"></fa-icon>
         </div>
-        <div class="itens">
+        <div class="itens-title">
           {{ curso.typecurso }}
         </div>
-        <div class="itens">
+        <div class="itens-title">
           <fa-icon [icon]="['fas', 'chevron-right']"></fa-icon>
         </div>
-        <div class="itens">
+        <div class="itens-title">
          {{ curso.name }}
         </div>
-    </div>
+  </div>
   
-    <mat-card class="example-card">
+  <mat-card class="example-card">
       <div class="text">
         <div class="title">
           {{ curso.name }}
@@ -37,7 +37,496 @@
           <button class="button">Inscreva-se</button>
         </div>
       </div>
-    </mat-card>
-    
-  
+      <div class="banner">
+        <img src={{curso.urlimg}} alt="" srcset="">
+      </div>
+  </mat-card>
+   
+  <div class="card-detail">
+    <div class="card-itens-detail">
+      <fa-icon [icon]="['fas', 'graduation-cap']"></fa-icon>
+      <span class="title-card-detail">Sobre o curso</span>
+      <div class="text-detail">
+        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized.
+      </div>
+    </div>
+    <div class="card-itens-detail">
+      <fa-icon [icon]="['fas', 'book']"></fa-icon>
+      <span class="title-card-detail">Ementa</span>
+      <div class="text-detail">
+        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized.
+      </div>
+    </div>
+    <div class="card-itens-detail">
+      <fa-icon [icon]="['fas', 'chalkboard']"></fa-icon>
+      <span class="title-card-detail">Professores</span>
+      <div class="text-detail">
+        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized.
+      </div>
+    </div>
+    <div class="card-itens-detail">
+      <fa-icon [icon]="['fas', 'circle-info']"></fa-icon>
+      <span class="title-card-detail">Informações</span>
+      <div class="text-detail">
+        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized.
+      </div>
+    </div>
+
   </div>
+  
+  <div class="container-about-course">
+    <div class="img-about-course">
+      <img src="../../../assets/images/cursos/curso-detail/curso1.jpg" alt="" srcset="">
+      <div class="div2"></div>
+    </div>
+    <div class="text-about-course">
+      <span class="title-about-course">Sobre o curso</span>
+      <p>
+        These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. 
+
+        But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+      
+        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+      </p>
+      <div class="detail-about-course">
+        <div class="itens-detail-about-course">
+          <fa-icon [icon]="['fas', 'clock']"></fa-icon>
+          <div class="subitens-detail-about-course">
+            <span class="title-itens-deataill-about-course">48hrs</span>
+            <span class="subtitle-itens-deataill-about-course">aula prática</span>
+          </div>
+        </div>
+        <div class="itens-detail-about-course">
+          <fa-icon [icon]="['fas', 'users']"></fa-icon>
+          <div class="subitens-detail-about-course">
+            <span class="title-itens-deataill-about-course">+1000</span>
+            <span class="subtitle-itens-deataill-about-course">alunos inscritos</span>
+          </div>
+        </div>
+        <div class="itens-detail-about-course">
+          <fa-icon [icon]="['fas', 'id-card']"></fa-icon>
+          <div class="subitens-detail-about-course">
+            <span class="title-itens-deataill-about-course">Certificado</span>
+            <span class="subtitle-itens-deataill-about-course">reconhecido por todo Brasil</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-learn">
+    <div class="detail-learn">
+      <span class="title-learn">O que você vai aprender</span>
+      <div class="list-itens-learn">
+        <div class="itens-learn">
+          <div class="icon-item-learn">1</div>
+          <div class="text-item-learn">
+            Temporibus autem quibusdam et aut officiis debitis aut rerum 
+            necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          </div>
+        </div>
+
+        <div class="itens-learn">
+          <div class="icon-item-learn">2</div>
+          <div class="text-item-learn">
+            Temporibus autem quibusdam et aut officiis debitis aut rerum 
+            necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          </div>
+        </div>
+
+        <div class="itens-learn">
+          <div class="icon-item-learn">3</div>
+          <div class="text-item-learn">
+            Temporibus autem quibusdam et aut officiis debitis aut rerum 
+            necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          </div>
+        </div>
+
+        <div class="itens-learn">
+          <div class="icon-item-learn">4</div>
+          <div class="text-item-learn">
+            Temporibus autem quibusdam et aut officiis debitis aut rerum 
+            necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          </div>
+        </div>
+
+        <div class="itens-learn">
+          <div class="icon-item-learn">5</div>
+          <div class="text-item-learn">
+            Temporibus autem quibusdam et aut officiis debitis aut rerum 
+            necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          </div>
+        </div>
+
+        <span class="title-learn">Público alvo</span>
+        <div class="itens-learn">
+          <div class="text-item-learn">
+            Temporibus autem quibusdam et aut officiis debitis aut rerum 
+            necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="img-learn">
+      <img src="../../../assets/images/cursos/curso-detail/curso1.1.jpg" alt="" srcset="">
+    </div>
+  </div>
+
+  <div class="container-menu">
+    <span class="title-menu">Ementa</span>
+    <ol>
+      <li class="list-title">1. Lorem ipsum dolor sit amet
+        <ul>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+        </ul>
+      </li>
+      <li class="list-title">2. Lorem ipsum dolor sit amet
+        <ul>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+        </ul>
+      </li>
+      <li class="list-title">3. Lorem ipsum dolor sit amet
+        <ul>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+        </ul>
+      </li>
+      <li class="list-title">4. Lorem ipsum dolor sit amet
+        <ul>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+        </ul>
+      </li>
+      <li class="list-title">5. Lorem ipsum dolor sit amet
+        <ul>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+        </ul>
+      </li>
+      <li class="list-title">6. Lorem ipsum dolor sit amet
+        <ul>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+          <li>The wise man therefore always holds in these matters to.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div class="container-teachers">
+    <div class="itens-teacher">
+      <div class="details-teacher">
+        <div class="container-title-teacher">
+          <span class="title-teacher">Nome do professor(a)</span>
+          <ul class="list-specialty-teacher">
+            <li>Especialidade</li>
+            <li>Especialidade</li>
+            <li>Especialidade</li>
+          </ul>
+        </div>
+          
+        <div class="text-detail-teacher">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+      </div>
+
+      <div class="img-teacher">
+      </div>
+    </div>
+
+    <div class="itens-teacher">
+      <div class="img-teacher2">
+      </div>
+      <div class="details-teacher2">
+        <div class="container-title-teacher">
+          <span class="title-teacher">Nome do professor(a)</span>
+          <ul class="list-specialty-teacher">
+            <li>Especialidade</li>
+            <li>Especialidade</li>
+            <li>Especialidade</li>
+          </ul>
+        </div>
+          
+        <div class="text-detail-teacher">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+      </div>
+
+     
+    </div>
+
+    <div class="itens-teacher">
+      <div class="details-teacher">
+        <div class="container-title-teacher">
+          <span class="title-teacher">Nome do professor(a)</span>
+          <ul class="list-specialty-teacher">
+            <li>Especialidade</li>
+            <li>Especialidade</li>
+            <li>Especialidade</li>
+          </ul>
+        </div>
+          
+        <div class="text-detail-teacher">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+      </div>
+
+      <div class="img-teacher3">
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="test">
+    <div class="img-value">
+    </div>
+    <div class="containervalue">
+       <div class="cardvalue">
+         <span class="titlecard">Presencial</span>
+         <div>
+           <div>
+             <span class="subtitlecard">Período</span>
+             <p>
+               01/01/2024 - 12/12/2027
+             </p> 
+           </div>  
+
+           <div>
+             <span class="subtitlecard">Horário</span>
+             <p>
+               Segunda-feira à Quinta-feira (08:00 às 12:00)
+             </p>
+           </div>
+
+           <div>
+             <span class="subtitlecard">Carga Horário</span>
+             <p>
+               40h
+             </p>
+           </div>
+
+           <div>
+             <span class="subtitlecard">Unidade</span>
+             <p>
+               <select id="unidades" name="unidades">
+                 <option value="maca">Mossoró</option>
+                 <option value="banana">Banana</option>
+                 <option value="laranja">Laranja</option>
+                 <option value="uva">Uva</option>
+               </select>
+              </p>
+           </div>
+
+           <div>
+            <span class="subtitlecard">Valor</span>
+              <h1>R$ 299,00</h1>
+           </div>
+
+           <div class="radio">
+            <label class="radio-container">
+              <input type="radio" name="opcao" />
+              Cartão de crédito  
+              <span class="radio-checkmark"></span>
+            </label>
+          
+            <label class="radio-container">
+              <input type="radio" name="opcao" />
+              Boleto
+              <span class="radio-checkmark"></span>
+            </label>
+           </div>
+
+           <div>
+            <select id="unidades" name="unidades">
+              <option value="maca">1x no cartão de R$ 299,00</option>
+              <option value="banana">Banana</option>
+              <option value="laranja">Laranja</option>
+              <option value="uva">Uva</option>
+            </select>
+           </div>
+           
+           <div>
+               <button>Fazer matrícula</button>
+           </div>
+           
+           <div class="container-line">
+            <div class="content-line">
+              <hr>
+              ou
+              <hr>
+            </div>
+           </div>
+
+           <div>
+            <button>Programa Senac Gratuidade</button>
+           </div>
+         </div>
+       </div>
+        
+       <div class="cardvalue">
+        <span class="titlecard">Online</span>
+        <div>
+          <div>
+            <span class="subtitlecard">Período</span>
+            <p>
+              01/01/2024 - 12/12/2027
+            </p> 
+          </div>  
+
+          <div>
+            <span class="subtitlecard">Horário</span>
+            <p>
+              Segunda-feira à Quinta-feira (08:00 às 12:00)
+            </p>
+          </div>
+
+          <div>
+            <span class="subtitlecard">Carga Horário</span>
+            <p>
+              40h
+            </p>
+          </div>
+
+          <div>
+            <span class="subtitlecard">Unidade</span>
+            <p>
+              <select id="unidades" name="unidades">
+                <option value="maca">Mossoró</option>
+                <option value="banana">Banana</option>
+                <option value="laranja">Laranja</option>
+                <option value="uva">Uva</option>
+              </select>
+             </p>
+          </div>
+
+          <div>
+           <span class="subtitlecard">Valor</span>
+             <h1>R$ 299,00</h1>
+          </div>
+
+          <div class="radio">
+           <label class="radio-container">
+             <input type="radio" name="opcao" />
+             Cartão de crédito  
+             <span class="radio-checkmark"></span>
+           </label>
+         
+           <label class="radio-container">
+             <input type="radio" name="opcao" />
+             Boleto
+             <span class="radio-checkmark"></span>
+           </label>
+          </div>
+
+          <div>
+           <select id="unidades" name="unidades">
+             <option value="maca">1x no cartão de R$ 299,00</option>
+             <option value="banana">Banana</option>
+             <option value="laranja">Laranja</option>
+             <option value="uva">Uva</option>
+           </select>
+          </div>
+          
+          <div>
+              <button>Solicitar reserva</button>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+    <div class="container-value-footer">
+    </div>
+  </div>
+   
+  <div class="common-questions">
+    <div class="title-common-questions">
+     <span>Perguntas Frequentes</span>
+    </div>
+    <div class="container-common-questions">
+      <div class="itens">
+        <div class="container-subtitle-common-questions">
+          <span class="subtitle-common-questions">Exemplo de pergunta?</span>
+          <fa-icon (click)="toggleIcone('question1')" *ngIf="iconeClicado['question1']" [icon]="['fas', 'xmark']"></fa-icon>
+          <fa-icon (click)="toggleIcone('question1')" *ngIf="!iconeClicado['question1']" [icon]="['fas', 'plus']"></fa-icon>
+        </div>
+        <div class="descripton-common-questions">
+          {{ text['question1'] }}
+        </div>
+      </div>
+      <div class="itens">
+        <div class="container-subtitle-common-questions">
+          <span class="subtitle-common-questions">Exemplo de pergunta?</span>
+          <fa-icon (click)="toggleIcone('question2')" *ngIf="iconeClicado['question2']" [icon]="['fas', 'xmark']"></fa-icon>
+          <fa-icon (click)="toggleIcone('question2')" *ngIf="!iconeClicado['question2']" [icon]="['fas', 'plus']"></fa-icon>
+        </div>
+        <div class="descripton-common-questions">
+          {{ text['question2'] }}
+        </div>
+      </div>
+      <div class="itens">
+        <div class="container-subtitle-common-questions">
+          <span class="subtitle-common-questions">Exemplo de pergunta?</span>
+          <fa-icon (click)="toggleIcone('question3')" *ngIf="iconeClicado['question3']" [icon]="['fas', 'xmark']"></fa-icon>
+          <fa-icon (click)="toggleIcone('question3')" *ngIf="!iconeClicado['question3']" [icon]="['fas', 'plus']"></fa-icon>
+        </div>
+        <div class="descripton-common-questions">
+          {{ text['question3'] }}
+        </div>
+      </div>
+      <div class="itens">
+        <div class="container-subtitle-common-questions">
+          <span class="subtitle-common-questions">Exemplo de pergunta?</span>
+          <fa-icon (click)="toggleIcone('question4')" *ngIf="iconeClicado['question4']" [icon]="['fas', 'xmark']"></fa-icon>
+          <fa-icon (click)="toggleIcone('question4')" *ngIf="!iconeClicado['question4']" [icon]="['fas', 'plus']"></fa-icon>
+        </div>
+        <div class="descripton-common-questions">
+          {{ text['question4'] }}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-forms">
+    <div class="forms-content"> 
+      <h2 class="title-forms">Faça seu cadastro</h2>
+      <h5 class="subtitle-forms">Cadastre-se no nosso mailing e receba, em primeira mão, novidades sobre os cursos online, convites para eventos e muito mais!</h5>
+  
+      <form action="">
+        <label for="name">
+          <input type="text" placeholder="Nome" name="name" id="name">
+        </label>      
+        <label for="email">
+          <input type="email" placeholder="E-mail" name="email" id="name">
+        </label>
+        <label for="phone">
+          <input type="phone" placeholder="Telefone" name="phone" id="phone">
+        </label>
+        <label for="term">
+          <input type="checkbox" name="term" id="term">
+          Eu li e aceito os termos e condições da Política de Privacidade e Contrato de Prestação de Serviço
+        </label>
+        <button class="forms-button">Cadastrar</button>
+      </form>
+    </div>
+    
+    <div class="img-container-forms">
+      <img src="../../../assets/images/pessoas/pessoa2.png" alt="" srcset="">
+    </div>
+  </div>
+</div>

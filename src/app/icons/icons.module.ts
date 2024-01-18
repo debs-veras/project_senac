@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -22,6 +23,14 @@ import { faSliders } from '@fortawesome/free-solid-svg-icons';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { faChalkboard } from '@fortawesome/free-solid-svg-icons';
+import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
+import { faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faIdCard } from '@fortawesome/free-solid-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+// import { faW } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   exports: [FontAwesomeModule],
@@ -32,6 +41,6 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 export class IconsModule {
   constructor(library: FaIconLibrary){
-    library.addIcons(faFacebook, faInstagram, faXTwitter, faYoutube, faLinkedin, faClock, faPhone, faEnvelope, faLocationArrow, faCalendar, faArrowRight, faArrowLeft, faChevronRight, faChevronLeft, faChevronDown, faChevronUp, faMagnifyingGlass, faSliders, faGraduationCap, faStar, faCheckCircle);
+    library.addIcons(faFacebook, faInstagram, faXTwitter, faYoutube, faLinkedin, faClock, faPhone, faEnvelope, faLocationArrow, faCalendar, faArrowRight, faArrowLeft, faChevronRight, faChevronLeft, faChevronDown, faChevronUp, faMagnifyingGlass, faSliders, faGraduationCap, faStar, faCheckCircle, faBook, faChalkboard, faCircleInfo, faUsers, faIdCard, faPlus, faXmark, faWhatsapp);
   }
 }

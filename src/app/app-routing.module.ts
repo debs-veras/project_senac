@@ -4,6 +4,8 @@ import { CursoFiltroComponent } from './components/curso-filtro/curso-filtro.com
 import { DetailscategoryComponent } from './pages/detailscategory/detailscategory.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DetailcursoComponent } from './pages/detailcurso/detailcurso.component';
+import { DetailunidadeComponent } from './pages/detailunidade/detailunidade.component';
+import { DetailcompanyComponent } from './pages/detailcompany/detailcompany.component';
 
 export const routes: Routes = [
   {
@@ -20,6 +22,14 @@ export const routes: Routes = [
   { 
     path: 'curso-detail', 
     component: DetailcursoComponent
+  },
+  { 
+    path: 'curso-unidade', 
+    component: DetailunidadeComponent
+  },
+  { 
+    path: 'curso-company', 
+    component: DetailcompanyComponent
   }
 ];
 

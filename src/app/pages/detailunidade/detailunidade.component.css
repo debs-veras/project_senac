@@ -1,0 +1,62 @@
+
+.content-title{
+  color: #fff;
+  display: flex;
+  line-height: 20px;
+  padding: 20px;
+  height: 45px;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(68, 126, 242, 1);
+}
+    
+.itens-title{
+  margin: 5px;
+}
+
+.img-container-unidade{
+  background-image: url("../../../assets/images/unidades/Senac\ Assú.jpg");
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+}
+
+.container-banner{
+  background-color: rgba(68, 126, 242, 1);
+  color: #fff;
+  display: flex;
+}
+
+.detail-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.itens-container{
+  width: 50%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.itens-container span{
+  margin: 0 10px;
+}
+
+h1{
+  font-weight: bold;
+}
+
+.button{
+  border: none;
+  color: rgba(0, 74, 141, 1);
+  width: 110px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}

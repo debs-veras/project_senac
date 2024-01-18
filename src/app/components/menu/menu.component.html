@@ -47,7 +47,7 @@
         <div class="menu-itens">
           <div class="subtitle">
             <span class="title">Unidades</span>
-            <button mat-menu-item>Assú</button>
+            <button mat-menu-item (click)="navigateToUnidadeDetail()">Assú</button>
             <button mat-menu-item>Caicó</button>
             <button mat-menu-item>Mossoró</button>
             <button mat-menu-item>Natal - Alecrim</button>
@@ -77,7 +77,7 @@
     </div>
 
     <div class="itens colorblue">
-      <a href="#">Para Empresas</a>
+      <a (click)="navigateToCompanyDetail()">Para Empresas</a>
     </div>
 
     <div class="itens colorblue">
