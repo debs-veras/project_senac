@@ -56,6 +56,10 @@ export class MenuComponent {
     this.router.navigate(['/curso-company']);
   }
 
+  navigateToPsgDetail() {
+    this.router.navigate(['/curso-psg']);
+  }
+
   toggleIcone(botao: string, classe: string){
     this.iconeClicado[botao] = !this.iconeClicado[botao];
     this.classeCSS[classe] = (this.classeCSS[classe] == "colorblue") ? this.classeCSS[classe] = "colororange" : this.classeCSS[classe] = "colorblue";

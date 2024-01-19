@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { DetailcursoComponent } from './pages/detailcurso/detailcurso.component';
 import { DetailunidadeComponent } from './pages/detailunidade/detailunidade.component';
 import { DetailcompanyComponent } from './pages/detailcompany/detailcompany.component';
+import { PsgComponent } from './pages/psg/psg.component';
 
 export const routes: Routes = [
   {
@@ -30,6 +31,10 @@ export const routes: Routes = [
   { 
     path: 'curso-company', 
     component: DetailcompanyComponent
+  },
+  { 
+    path: 'curso-psg', 
+    component: PsgComponent
   }
 ];
 

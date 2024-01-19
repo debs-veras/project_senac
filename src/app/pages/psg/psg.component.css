@@ -1,0 +1,151 @@
+.link-descript a{
+  /* text-decoration: underline; */
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.text-descript{
+  margin-bottom: 10px;
+}
+
+.title-descript-psg{
+  font-size: 14px;
+}
+
+.subtitle-descript-psg{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container-descript-psg{
+  display: flex;
+  margin-top: 50px;
+}
+
+.itens-descript-psg{
+  width: 480px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  color: #fff ;
+}
+
+.content-descript-psg{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descript-psg{
+  margin: 10px 0;
+  color: rgba(70, 65, 65, 1);
+  width: 467px;
+}
+
+.subtitle-detail-psg{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title-detail-psg{
+  color: rgba(68, 126, 242, 1);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container-img-psg{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-descripton-psg{
+  width: 50%;
+}
+
+.title-itens-psg{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container-psg{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-detail-psg{
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: -100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.itens-detail-psg{
+  width: 250px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+}
+
+.example-card{
+  border-radius: 0;
+  height: 535px;
+  background-size: 100%;
+  background-position: 50% 46%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: center ;
+  color: #fff;
+  position: relative;
+}
+
+.example-card::after{
+  content: "";
+  color: #ffffff;
+  background: linear-gradient(0deg, #000000 0%, rgba(240, 106, 15, 0) 74.3%);
+}
+
+.content-title{
+  color: #fff;
+  display: flex;
+  line-height: 20px;
+  padding: 20px;
+  height: 45px;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(68, 126, 242, 1);
+}
+      
+.itens-title{
+  margin: 5px;
+}
+
+.text-banner-company{
+  margin: 50px;
+  padding: 50px;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+
+}
+
+.title-banner-company{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.subtitle-banner-company{
+  font-size: 20px;
+  width: 40%;
+}

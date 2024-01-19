@@ -35,6 +35,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { DetailcursoComponent } from './pages/detailcurso/detailcurso.component';
 import { DetailunidadeComponent } from './pages/detailunidade/detailunidade.component';
 import { DetailcompanyComponent } from './pages/detailcompany/detailcompany.component';
+import { PsgComponent } from './pages/psg/psg.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { DetailcompanyComponent } from './pages/detailcompany/detailcompany.comp
     DetailcursoComponent,
     DetailscategoryComponent,
     DetailunidadeComponent,
-    DetailcompanyComponent
+    DetailcompanyComponent,
+    PsgComponent
   ],
   imports: [
     MatCheckboxModule,

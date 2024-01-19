@@ -1,0 +1,283 @@
+.forms-company-container{
+  width: 695px;
+  display: flex;
+  flex-direction: column;
+}
+.double-input input, select{
+  width: 290px !important;
+  margin: 0 15px 0px 0px ;
+}
+
+.term{
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.forms-button{
+  width: 160px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.forms-company-container input, select{
+  border: none;
+  width: 597px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.title-forms-company{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitle-forms-company{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.container-forms-company{
+  border-radius: 0;
+  height: 780px;
+  background-size: 100%;
+  background-position: 0% 20%;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.forms-company{
+  z-index: 1;
+  width: 42%;
+  margin: 50px;
+}
+
+.container-forms-company::after{
+  content: "";
+  color: #ffffff;
+  background: linear-gradient(269.55deg, rgba(240, 106, 15, 0.3) 10%, #000000 140%);
+
+}
+
+.container-service-offering{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.img-option-service-offering img{
+  width: 780px;
+  height: 580px;
+}
+
+.container-itens-service-offering{
+  margin-top: 10px;
+}
+
+.icon-service-offering{
+  color: rgba(68, 126, 242, 1);
+  margin-right: 10px;
+}
+
+.itens-option-service-offering{
+  color: rgba(70, 65, 65, 1);
+  margin-top: 10px;
+}
+
+.title-option-service-offering{
+  font-size: 24px;
+  font-weight: bold ;
+}
+
+.container-option-service-offering{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 100px;
+}
+
+.link-solution{
+  text-decoration: underline !important;
+  font-weight: bold;
+
+}
+
+.option-solution{
+  margin: 15px 0;
+}
+
+.img-solution{
+  width: 50%;
+  display: flex;
+  justify-content: left;
+}
+.img-solution img{
+  width: 656px;
+  height: 832px;
+}
+
+.title-solution{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.descript-solution{
+  color: rgba(70, 65, 65, 1);
+  margin: 10px;
+}
+
+.container-option-solution{
+  margin: 10px;
+  color: rgba(70, 65, 65, 1);
+}
+ 
+.icon-solution1{
+  color: rgba(0, 74, 141, 1);
+  margin-right: 5px;
+}
+
+.icon-solution2{
+  margin-right: 5px;
+  color: rgba(242, 139, 60, 1);
+}
+
+.container-solution-company{
+  /* flex-wrap: wrap; */
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-solution{
+  width: 60%;
+  padding: 50px;
+}
+
+.container-service-company{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title-service-company{
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtitle-service-company{
+  color: rgba(70, 65, 65, 1);
+}
+
+.text-service-company{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 165px;    
+}
+
+.img-service-company{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-service-company img{
+  width: 600px;
+  height: 550px;
+}
+
+.container-detail-company{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img-container-company{
+  width: 60px;
+  height: 60px;
+}
+
+.itens-company img{
+  width: 100%;
+  height: 100%;
+}
+
+.text-detail-company{
+  color: rgba(70, 65, 65, 1)  ;
+}
+
+.itens-company{
+  margin: 50px;
+  width: 267px;
+}
+
+.title-detail-container{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.example-card{
+  border-radius: 0;
+  height: 600px;
+  background-size: 100%;
+  background-position: 0% 20%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: center ;
+  color: #fff;
+}
+
+.title-banner-company{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.subtitle-banner-company{
+  font-size: 20px;
+}
+
+.example-card::after{
+  content: "";
+  color: #ffffff;
+  background: linear-gradient(0deg, #000000 0%, rgba(240, 106, 15, 0.1) 74.3%);
+}
+  
+.text-banner-company{
+  margin: 60px;
+  text-align: center;
+  z-index: 1;
+  width: 490px;
+}
+
+.content-title{
+  color: #fff;
+  display: flex;
+  line-height: 20px;
+  padding: 20px;
+  height: 45px;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(68, 126, 242, 1);
+}
+      
+.itens-title{
+  margin: 5px;
+}
