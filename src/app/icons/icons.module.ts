@@ -32,6 +32,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { faCheckDouble } from '@fortawesome/free-solid-svg-icons';
+import { faCodeCompare } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   exports: [FontAwesomeModule],
@@ -42,6 +43,6 @@ import { faCheckDouble } from '@fortawesome/free-solid-svg-icons';
 
 export class IconsModule {
   constructor(library: FaIconLibrary){
-    library.addIcons(faFacebook, faInstagram, faXTwitter, faYoutube, faLinkedin, faClock, faPhone, faEnvelope, faLocationArrow, faCalendar, faArrowRight, faArrowLeft, faChevronRight, faChevronLeft, faChevronDown, faChevronUp, faMagnifyingGlass, faSliders, faGraduationCap, faStar, faCheckCircle, faBook, faChalkboard, faCircleInfo, faUsers, faIdCard, faPlus, faXmark, faWhatsapp, faPlay, faCheckDouble);
+    library.addIcons(faFacebook, faInstagram, faXTwitter, faYoutube, faLinkedin, faClock, faPhone, faEnvelope, faLocationArrow, faCalendar, faArrowRight, faArrowLeft, faChevronRight, faChevronLeft, faChevronDown, faChevronUp, faMagnifyingGlass, faSliders, faGraduationCap, faStar, faCheckCircle, faBook, faChalkboard, faCircleInfo, faUsers, faIdCard, faPlus, faXmark, faWhatsapp, faPlay, faCheckDouble, faCodeCompare);
   }
 }

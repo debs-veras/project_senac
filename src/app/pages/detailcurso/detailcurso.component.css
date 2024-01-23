@@ -1,3 +1,11 @@
+.title-carousel{
+  margin: 20px 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  width: 100%;
+}
+
 .container-forms{
   background: linear-gradient(180deg, #447EF2 0%, #8921A6 100%);
   color: #fff;

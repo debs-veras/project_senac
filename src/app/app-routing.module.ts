@@ -7,6 +7,7 @@ import { DetailcursoComponent } from './pages/detailcurso/detailcurso.component'
 import { DetailunidadeComponent } from './pages/detailunidade/detailunidade.component';
 import { DetailcompanyComponent } from './pages/detailcompany/detailcompany.component';
 import { PsgComponent } from './pages/psg/psg.component';
+import { NewsComponent } from './pages/news/news.component';
 
 export const routes: Routes = [
   {
@@ -17,7 +18,7 @@ export const routes: Routes = [
     ]
   },
   { 
-    path: 'curso-category', 
+    path: 'curso-category/:id', 
     component: DetailscategoryComponent
   }, 
   { 
@@ -35,6 +36,10 @@ export const routes: Routes = [
   { 
     path: 'curso-psg', 
     component: PsgComponent
+  },
+  { 
+    path: 'news', 
+    component: NewsComponent
   }
 ];
 

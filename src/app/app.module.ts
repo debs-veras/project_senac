@@ -36,6 +36,7 @@ import { DetailcursoComponent } from './pages/detailcurso/detailcurso.component'
 import { DetailunidadeComponent } from './pages/detailunidade/detailunidade.component';
 import { DetailcompanyComponent } from './pages/detailcompany/detailcompany.component';
 import { PsgComponent } from './pages/psg/psg.component';
+import { NewsComponent } from './pages/news/news.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { PsgComponent } from './pages/psg/psg.component';
     DetailscategoryComponent,
     DetailunidadeComponent,
     DetailcompanyComponent,
-    PsgComponent
+    PsgComponent,
+    NewsComponent
   ],
   imports: [
     MatCheckboxModule,

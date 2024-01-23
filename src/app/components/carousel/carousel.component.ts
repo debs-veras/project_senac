@@ -39,7 +39,7 @@ export class CarouselComponent implements OnInit{
     'tecnicos': "Técnico"
   };
   
-  pag = true;
+  pag = false;
   filtros: any = {};
   start = 0;
   pause = 0;
@@ -120,7 +120,7 @@ export class CarouselComponent implements OnInit{
       this.filtros = filtros;
       this.filtro();
     }); 
-    this.navigateToNewPage();
+    // this.navigateToNewPage();
   }
   
   nextSlider(){

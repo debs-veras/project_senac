@@ -2,6 +2,15 @@ import { Component, ViewChild  } from '@angular/core';
 import { MatMenuTrigger } from '@angular/material/menu';
 import { Router } from '@angular/router';
 import { Categoria } from '../../interface/categoria';
+
+function normalizeString(str: string): string {
+  return str
+    .normalize('NFD') // Normaliza para decompor os caracteres acentuados
+    .replace(/[\u0300-\u036f]/g, '') // Remove os caracteres acentuados
+    .replace(/\s+/g, '-') // Substitui espaços em branco por hifens
+    .toLowerCase(); // Converte todas as letras para minúsculas
+}
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -44,20 +53,25 @@ export class MenuComponent {
 
   constructor(private router: Router) {}
   
-  navigateToCursoDetail(curso: Categoria) {
-    this.router.navigate(['/curso-category'],  {queryParams: curso});
+  navigateToCursoDetail(curso: Categoria){
+    this.router.navigate(['/curso-category', normalizeString(curso.name)],  {queryParams: curso});
+    console.log(normalizeString(curso.name))
   }
   
-  navigateToUnidadeDetail() {
+  navigateToUnidadeDetail(){
     this.router.navigate(['/curso-unidade']);
   }
 
-  navigateToCompanyDetail() {
+  navigateToCompanyDetail(){
     this.router.navigate(['/curso-company']);
   }
 
-  navigateToPsgDetail() {
+  navigateToPsgDetail(){
     this.router.navigate(['/curso-psg']);
+  }
+  
+  navigateToNewsDetail(){
+    this.router.navigate(['/news']);
   }
 
   toggleIcone(botao: string, classe: string){
