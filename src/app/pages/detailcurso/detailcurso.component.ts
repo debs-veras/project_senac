@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router , ActivatedRoute } from '@angular/router';
 import { CardCurso } from '../../interface/card-curso';
 @Component({
   selector: 'app-detailcurso',
@@ -11,7 +11,7 @@ export class DetailcursoComponent implements OnInit{
   iconeClicado: { [key: string]: boolean } = {};
   text: { [key: string]: string } = {};
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
@@ -30,12 +30,15 @@ export class DetailcursoComponent implements OnInit{
   }
 
   toggleIcone(botao: string){
-
     this.iconeClicado[botao] = !this.iconeClicado[botao];
     if(this.iconeClicado[botao])
       this.text[botao] = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
     else{
       this.text[botao] = "";
     }
+  }
+
+  navigateToNewsDetail(){
+    this.router.navigate(['/forms-request']);
   }
 }

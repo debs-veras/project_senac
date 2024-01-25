@@ -8,6 +8,7 @@ import { DetailunidadeComponent } from './pages/detailunidade/detailunidade.comp
 import { DetailcompanyComponent } from './pages/detailcompany/detailcompany.component';
 import { PsgComponent } from './pages/psg/psg.component';
 import { NewsComponent } from './pages/news/news.component';
+import { FormsRequestComponent } from './pages/forms-request/forms-request.component';
 
 export const routes: Routes = [
   {
@@ -22,7 +23,7 @@ export const routes: Routes = [
     component: DetailscategoryComponent
   }, 
   { 
-    path: 'curso-detail', 
+    path: 'curso-detail/:id', 
     component: DetailcursoComponent
   },
   { 
@@ -40,6 +41,10 @@ export const routes: Routes = [
   { 
     path: 'news', 
     component: NewsComponent
+  }, 
+  { 
+    path: 'forms-request', 
+    component: FormsRequestComponent
   }
 ];
 

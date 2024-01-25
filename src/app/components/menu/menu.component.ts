@@ -5,10 +5,10 @@ import { Categoria } from '../../interface/categoria';
 
 function normalizeString(str: string): string {
   return str
-    .normalize('NFD') // Normaliza para decompor os caracteres acentuados
-    .replace(/[\u0300-\u036f]/g, '') // Remove os caracteres acentuados
-    .replace(/\s+/g, '-') // Substitui espaços em branco por hifens
-    .toLowerCase(); // Converte todas as letras para minúsculas
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, '-') 
+    .toLowerCase();
 }
 
 @Component({
